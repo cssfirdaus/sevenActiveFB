@@ -1,0 +1,53 @@
+<ion-view view-title="User Data">
+  <ion-content ng-init="initData()">
+
+
+    <div class="list">
+      <div class="item item-divider text-center">
+   Image
+ </div>
+
+<div class="item avatar text-center">
+<img src="{{data.pic}}">
+</div>
+
+ </div>
+
+
+
+    <div class="list">
+      <div class="item item-divider text-center">
+   Data Fetched From FB API
+ </div>
+    <a class="item " >
+
+      Name
+      <span class="item-note">
+        {{data.name}}
+      </span>
+    </a>
+
+    <a class="item " >
+
+      Email
+      <span class="item-note">
+        {{data.email}}
+      </span>
+    </a>
+    <a class="item " >
+
+      Gender
+      <span class="item-note">
+        {{data.gender}}
+      </span>
+    </a>
+    <a class="item " >
+
+      FB ID
+      <span class="item-note">
+        {{data.id}}
+      </span>
+    </a>
+  </div>
+  </ion-content>
+</ion-view>
